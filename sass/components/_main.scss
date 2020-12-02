@@ -1,0 +1,38 @@
+body {
+    background-color: $black;
+    // display: flex;
+    // // flex-wrap: wrap;
+    // max-width: 2000px;
+}
+
+.heroVid {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    align-content: center;
+
+    video {
+        text-align: center;
+        align-content: center;
+        margin: 0 auto;
+        width: 94.5%;
+    }
+}
+
+.clients {
+    background-color: $white;
+    display: flex;
+    flex-wrap: wrap;
+    width: 94.5%;
+    align-content: center;
+    margin: 0 auto;
+    margin-top: 6rem;
+    margin-bottom: 6rem;;
+
+    img {
+        margin: 0 auto;
+        width: 800px;
+        height: auto;
+        max-width: 800px;
+    }
+}
