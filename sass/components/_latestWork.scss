@@ -1,0 +1,78 @@
+.latestWork {
+    display: flex;
+    flex-direction: row;
+    margin: 10rem 3rem 10rem 3rem;
+    align-items: center;
+
+    .latestVideo {
+        color: $white;
+        width: 45%;
+        
+        video {
+            width: 100%;
+            height: auto;
+        }
+
+        h4 {
+            font-family: $title;
+            font-size: 1.5rem;
+            margin-top: 1.5rem;
+        }
+
+        p {
+            color: grey;
+            font-family: $body;
+            font-size: $bodySize;
+            margin-top: 1rem;
+        }
+    }
+
+    .latestWorkRight {
+        margin-left: auto;
+        order: 2;
+        width: 40%;
+
+        h3 {
+            color: white;
+            font-family: $title;
+            font-size: $titleSize;
+            padding-bottom: 1.5rem;
+            border-bottom: .5px solid $green;
+        }
+        
+        p {
+            color: grey;
+            font-family: $body;
+            font-size: $bodySize;
+            margin-top: 2rem;
+            text-align: left;
+        }
+
+        .lastestWorkLink {
+            display: flex;
+            flex-direction: row;
+            text-align: center;
+            align-content: center;
+            margin-top: 2rem;
+
+            a {
+                font-family: $body;
+                font-size: $bodySize;
+                color: $white;
+                text-decoration: none;
+                padding-right: .75rem;
+                padding-left: .75rem;
+                padding: .5rem 2rem .5rem 2rem;
+                border: .1px solid $green;
+
+                &:hover {
+                    cursor: pointer;
+                    opacity: .7;
+                    transform: scale(1.05);
+                    background-color: $buttonFill;
+                }
+            }
+        }
+    }
+    
+}

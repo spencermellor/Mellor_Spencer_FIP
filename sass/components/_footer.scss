@@ -1,0 +1,72 @@
+.footerContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: 1px solid $green;
+    margin-bottom: 1rem;
+
+    .footerLogo {
+        margin: 0 auto;
+    
+        img {
+            width: 50px;
+            height: auto;
+        }
+    }
+
+    .getInTouch {
+        display: flex;
+        margin-top: .5rem;
+        align-items: center;
+
+        img {
+            width: 25px;
+            height: auto;
+            margin: 0rem 2rem 0rem 2rem;
+            padding: .5rem;
+
+            &:hover {
+                cursor: pointer;
+                opacity: .5;
+                transform: scale(1.15);
+            }
+        }
+
+        .getInTouchButton {
+            font-family: $body;
+            font-size: $bodySize;
+            color: $white;
+            text-decoration: none;
+            padding-right: .75rem;
+            padding-left: .75rem;
+            padding: .5rem 2rem .5rem 2rem;
+            border: .1px solid $green;
+            text-transform: uppercase;
+    
+            &:hover {
+                cursor: pointer;
+                opacity: .7;
+                transform: scale(1.05);
+                background-color: $buttonFill;
+            }
+        }
+    }
+
+    .contactInfo {
+        display: column;
+        flex-direction: row;
+        margin: 0 auto;
+        align-items: center;
+        align-content: center;
+
+        p {
+            margin-top: .5rem;
+            color: $white;
+            font-size: $bodySize;
+            font-family: $body;
+            text-transform: uppercase;
+            text-align: center;
+        }
+
+    }
+}
