@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SMELLORR - Portfolio</title>
+    <title>SMELLORR - Contact</title>
     <link rel="stylesheet" href="css/master.css" type="text/css"> <!-- master css link -->
     <link rel="stylesheet" href="css/reset.css" type="text/css"> <!-- reset css link -->
 
@@ -26,6 +26,40 @@
 
     <main>
 
+        <div class="banner">
+            <div class="bannerText">
+                <p>To start our creative journey, please fill in as many details as possible in the form below.</p>
+                <p>We will get back to you shortly.</p>
+            </div>
+        </div>
+        
+        <div class="contactForm">
+            <div class="contactWelcome">
+                <h3>Contact Us</h3>
+                <p>Please don't be shy, we don't bite.</p>
+            </div>
+
+            <form action="./includes/mail/mail.php" method="POST" id="mail-form">
+                <label for="firstname">First Name</label>
+                <input class="names" type="text" id="firstname" name="firstname" placeholder="First Name..." required>
+
+                <label for="lastname">Last Name</label>
+                <input class="names" type="text" id="lastname" name="lastname" placeholder="Last Name..." required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Email..." required>
+
+                <label for="message">Describe the project / include deadlines</label>
+                <textarea name="message" id="message" cols="30" rows="10"></textarea>
+
+                <div class="submit-wrapper">
+                    <span class="submit">Submit</span>
+                    <i class="fas fa-paper-plane"></i>
+                </div>
+
+            </form>
+        </div>
+
     </main>
 
     <footer class="footerContainer"> <!-- footer -->
@@ -44,4 +78,5 @@
     </footer> <!-- end of footer -->
     
 </body>
+<script src="js/main.js" type="module"></script>
 </html>

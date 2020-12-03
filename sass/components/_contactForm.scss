@@ -1,0 +1,77 @@
+.contactForm {
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 10rem;
+    max-width: 1200px;
+
+    .contactWelcome {
+
+        text-align: center;
+        
+        h3 {
+            color: $white;
+            font-family: $title;
+            font-size: $titleSize;
+            padding-bottom: .1rem;
+        }
+
+        p {
+            margin-top: .5rem;
+            color: $grey;
+            font-family: $body;
+        }
+
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    label {
+        color: $white;
+        margin-top: 2rem;
+        font-family: $body;
+        padding-bottom: .75rem;
+        text-transform: uppercase;
+    }
+
+    input {
+        background-color: transparent;
+        border: none;
+        border-bottom: 1px solid $green;
+        width: 50%;
+        max-width: 200px;
+        color: $grey;
+        font-family: $body;
+    }
+
+    textarea {
+        background-color: transparent;
+        border: 1px solid $green;
+        color: $grey;
+        font-family: $body;
+    }
+
+    .submit-wrapper {
+        font-family: $body;
+        font-size: $bodySize;
+        color: $white;
+        margin-top: 2rem;
+        text-align: center;
+        width: 20%;
+        text-decoration: none;
+        padding-right: .75rem;
+        padding-left: .75rem;
+        padding: .5rem 2rem .5rem 2rem;
+        border: .1px solid $green;
+
+            &:hover {
+                cursor: pointer;
+                opacity: .7;
+                transform: scale(1.05);
+                background-color: $buttonFill;
+            }
+    }
+}
