@@ -27,12 +27,36 @@ body {
     align-content: center;
     margin: 0 auto;
     margin-top: 6rem;
-    margin-bottom: 6rem;;
+    margin-bottom: 6rem;
 
     img {
         margin: 0 auto;
         width: 800px;
         height: auto;
         max-width: 800px;
+    }
+}
+
+.banner {
+    background-color: $white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 94.5%;
+    margin: 0 auto;
+    margin-top: 3rem;
+    margin-bottom: 6rem;
+    text-align: center;
+    height: 125px;
+
+    .bannerText {
+        font-family: $body;
+        font-size: $bodySize;
+        color: $black;
+
+        p {
+            line-height: 2rem;
+        }
     }
 }
