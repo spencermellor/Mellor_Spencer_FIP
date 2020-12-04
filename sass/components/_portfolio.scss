@@ -1,0 +1,44 @@
+.portfolioLinks {
+    color: $white;
+    font-family: $body;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 0 auto;
+    justify-content: center;
+    width: 94.5%;
+
+    .link {
+        width: 31%;
+        text-align: center;
+        margin-bottom: 6rem;
+
+        &:hover {
+            cursor: pointer;
+            transform:scale(1.05932187391827439012820938450);
+        }
+
+
+        p {
+            display: inline-block;
+            padding: 1rem;
+
+        }
+    }
+}
+
+.selected {
+    p {
+        border-bottom: 1px solid $green;
+    }
+}
+
+.item {
+    color: white;
+    img {
+        width: 400px;
+    }
+    video {
+        width: 400px;
+    }
+}
