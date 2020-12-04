@@ -58,5 +58,10 @@ body {
         p {
             line-height: 2rem;
         }
+
+        h3 {
+            font-family: $title;
+            font-size: $titleSize;
+        }
     }
 }

@@ -24,8 +24,36 @@
         </div>
     </header> <!-- end of header -->
 
-    <main>
+    <main id="app">
+        <div class="banner">
+            <div class="bannerText">
+                <h3>SMELLORR</h3>
+                <p>Professional media services ensuring the story is told exactly the way you envision.</p>
+            </div>
+        </div>
 
+        <div class="portfolioLinks">
+            <div  @click="clickTitle" class="link selected" id="video">
+                <p>Videography</p>
+            </div>  
+            <div @click="clickTitle" class="link" id="pic">
+                <p>Photography</p>
+            </div>  
+            <div @click="clickTitle" class="link" id="graphic">
+                <p>Graphic Design</p>
+            </div>  
+        </div>
+        <div v-if="error" class="error">
+            <h2>{{ error }}</h2>
+        </div>
+        <div class="item-list">
+            <div class="item" v-for="item in items">
+                <h3>{{ item.item_title }}</h3>
+                <video v-if="item.item_category == 'video'" :src="item.item_src" controls muted loop></video>
+                <img v-else :src="item.item_src" :alt="item.item_title">
+                <p>{{ item.item_desc }} </p>
+            </div>
+        </div>
     </main>
 
     <footer class="footerContainer"> <!-- footer -->
@@ -44,4 +72,5 @@
     </footer> <!-- end of footer -->
     
 </body>
+<script src="js/portfolio.js" type="module"></script>
 </html>

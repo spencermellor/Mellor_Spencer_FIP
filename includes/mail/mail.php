@@ -53,7 +53,7 @@ $email_message = sprintf('Name: %s, Email %s, Message: %s', $visitor_name, $visi
 $email_result = mail($email_recipient, $email_subject, $email_message, $email_headers);
 
 if ($email_result) {
-    $results['message'] = 'Your email was sent';
+    $results['message'] = 'Your email submission was successful. You will hear back from us shortly.';
 } else {
     $results['message'] = 'Error, it broken, did not send';
 }
