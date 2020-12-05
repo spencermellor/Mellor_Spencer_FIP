@@ -11,6 +11,7 @@
         img {
             width: 50px;
             height: auto;
+            margin-bottom: -.25rem;
         }
     }
 
@@ -23,7 +24,6 @@
             width: 25px;
             height: auto;
             margin: 0rem 2rem 0rem 2rem;
-            padding: .5rem;
 
             &:hover {
                 cursor: pointer;

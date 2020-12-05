@@ -24,7 +24,7 @@
         </div>
     </header> <!-- end of header -->
 
-    <main id="app">
+    <main id="app"> <!-- vue link -->
         <div class="banner">
             <div class="bannerText">
                 <h3>SMELLORR</h3>
@@ -46,14 +46,26 @@
         <div v-if="error" class="error">
             <h2>{{ error }}</h2>
         </div>
+
         <div class="item-list">
-            <div class="item" v-for="item in items">
-                <h3>{{ item.item_title }}</h3>
-                <video v-if="item.item_category == 'video'" :src="item.item_src" controls muted loop></video>
-                <img v-else :src="item.item_src" :alt="item.item_title">
-                <p>{{ item.item_desc }} </p>
+            <div class="item" v-for="item in items" >
+                <!--Video Div-->
+                <div class="item_video"  v-if="item.item_category == 'video'">
+                    <div class="videoCopy">
+                        <h3>{{ item.item_title }}</h3>
+                        <p>{{ item.item_desc }} </p>
+                    </div>
+                    <video class="videoRight" :src="item.item_src" controls muted loop></video>
+                </div>
+                <!--image gdiv-->
+                <div class="item_image" v-else>
+                    <h3>{{ item.item_title }}</h3>
+                    <img :src="item.item_src" :alt="item.item_title">
+                </div>
+
             </div>
         </div>
+
     </main>
 
     <footer class="footerContainer"> <!-- footer -->

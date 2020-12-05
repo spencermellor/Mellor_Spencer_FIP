@@ -10,6 +10,13 @@
         img {
             width: 75px;
             height: auto;
+            padding: .3rem;
+
+            &:hover {
+                cursor: pointer;
+                opacity: .6;
+                transform: scale(1.05);
+            }
         }
     }
 

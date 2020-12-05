@@ -18,7 +18,6 @@
             transform:scale(1.05932187391827439012820938450);
         }
 
-
         p {
             display: inline-block;
             padding: 1rem;
@@ -28,17 +27,108 @@
 }
 
 .selected {
+
     p {
         border-bottom: 1px solid $green;
     }
 }
 
-.item {
-    color: white;
-    img {
-        width: 400px;
+.item-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 94.5%;
+    margin-bottom: 6rem;
+
+    .itemCopy {
+        width: 100%;
+
+        h3 {
+            color: $white;
+            font-family: $title;
+            font-size: $titleSize;
+            padding-bottom: .75rem;
+        }
+    
+        p {
+            padding-top: .75rem;
+            border-top: 1px solid $green;
+            color: $grey;
+            font-family: $body;
+            width: 90%;
+        }
+
     }
-    video {
-        width: 400px;
+
+    .item {
+        display: flex;
+        color: $white;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+
+        .item_video {
+            
+            display: flex;
+            flex-direction: row;
+
+            .videoCopy {
+                display: flex;
+                flex-direction: column;
+
+                h3 {
+                    font-family: $title;
+                    font-size: $titleSize;
+                    padding-bottom: .75rem;
+                }
+
+                p {
+                    padding-top: .75rem;
+                    border-top: 1px solid $green;
+                    color: $grey;
+                    font-family: $body;
+                    width: 90%;
+                }
+            }
+            
+            video {
+                width: 60%;
+                max-width: 500px;
+                margin-bottom: 6rem;
+            }
+        }
+
+        .item_image {
+
+            display: flex;
+            flex-direction: column;
+            margin: 0 auto;
+            text-align: center;
+            align-items: center;
+            width: 50%;
+            max-width: 1000px;
+
+            h3 {
+                font-family: $title;
+                font-size: 1.3rem;
+                margin-bottom: 1rem;
+                text-align: left;
+                display: block;
+                width: 100%;
+            }
+
+            img {
+                align-content: center;
+                width: 100%;
+                max-width: 500px;               
+                margin-bottom: 4rem;
+                padding-top: 1rem;
+                border-top: 1px solid $green;
+
+            }
+        }
+            
     }
 }
